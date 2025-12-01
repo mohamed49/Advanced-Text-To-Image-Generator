@@ -44,7 +44,6 @@ venv.bak/
 
 # Model files and cache
 cache/
-models/
 *.pth
 *.pt
 *.ckpt
