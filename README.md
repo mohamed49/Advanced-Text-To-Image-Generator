@@ -62,7 +62,7 @@ text-to-image-generator/
    ```
 
 5. **Open your browser**
-   Navigate to `http://localhost:8080`
+   Navigate to `http://localhost:7860`
 
 ### Lightning.ai Deployment
 
@@ -89,7 +89,7 @@ text-to-image-generator/
    ```
 
 5. **Expose the port**
-   - Lightning.ai will automatically expose port 8080
+   - Lightning.ai will automatically expose port 7860
    - Click on the "Open App" button in the Studio
 
 ## 🎯 Usage
@@ -106,7 +106,7 @@ text-to-image-generator/
 
 #### Generate Single Image
 ```bash
-curl -X POST http://localhost:8080/generate \
+curl -X POST http://localhost:7860/generate \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "A serene mountain landscape at sunset",
@@ -118,12 +118,12 @@ curl -X POST http://localhost:8080/generate \
 
 #### Health Check
 ```bash
-curl http://localhost:8080/health
+curl http://localhost:7860/health
 ```
 
 #### Batch Generation
 ```bash
-curl -X POST http://localhost:8080/batch-generate \
+curl -X POST http://localhost:7860/batch-generate \
   -H "Content-Type: application/json" \
   -d '{
     "prompts": [
@@ -208,12 +208,6 @@ This project is licensed under the MIT License.
 - [Stable Diffusion](https://github.com/CompVis/stable-diffusion) - Base model
 - [Hugging Face Diffusers](https://github.com/huggingface/diffusers) - Diffusion library
 - [Lightning.ai](https://lightning.ai) - Cloud deployment platform
-
-## 📧 Support
-
-For issues and questions:
-- Open an issue on GitHub
-- Contact the development team
 
 ## 🚀 Roadmap
 
